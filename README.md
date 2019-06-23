@@ -66,6 +66,6 @@ yarn test
 
 ## 📝 License
 
-MIT License
+The MIT License (MIT)
 
 ## 📚 Acknowledgments
