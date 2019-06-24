@@ -11,10 +11,20 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc --build jest.tsconfig.json",
-    "dev": "nodemon src/index.ts",
-    "start": "node build/index.js"
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "build": "tsc --build tsconfig.json",
+    "start:dev": "nodemon src/main.ts",
+    "prestart:prod": "rimraf dist && npm run build",
+    "start:prod": "node build/main.js"
   },
-  "devDependencies": {
-  }
+  "dependencies": {
+    "@nestjs/common": "^6.3.2",
+    "@nestjs/core": "^6.3.2",
+    "@nestjs/platform-express": "^6.3.2",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.5.2"
+  },
+  "devDependencies": {}
 }
