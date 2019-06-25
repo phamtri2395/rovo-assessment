@@ -1,11 +1,29 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import IEvent from './event.interface';
+
+import { RecurrenceType } from './event.type';
 
 @Entity()
-export default class EventEntity implements IEvent {
+export default class EventEntity {
   @PrimaryGeneratedColumn()
-  public id: number;
+  public id?: number;
 
-  @Column({ length: 50 })
+  @Column('nvarchar', { length: 50 })
   public name: string;
+
+  @Column('bigint', { width: 14 })
+  public start: number;
+
+  @Column('bigint', { width: 14 })
+  public end: number;
+
+  @Column()
+  public duration: number;
+
+  @Column()
+  public include: string;
+
+  @Column()
+  public exclude: string;
+  @Column()
+  public recurrence: RecurrenceType;
 }
