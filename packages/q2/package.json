@@ -1,0 +1,26 @@
+{
+  "name": "@rovo/q2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Question #2",
+  "author": "Phạm Minh Trí <phamtri2395@gmail.com>",
+  "keywords": [
+    "rovo",
+    "assessment",
+    "question"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "build": "tsc --build tsconfig.json",
+    "start:dev": "nodemon src/main.ts",
+    "prestart:prod": "rimraf dist && npm run build",
+    "start:prod": "node build/main.js"
+  },
+  "dependencies": {
+    "inquirer": "^6.4.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {}
+}
