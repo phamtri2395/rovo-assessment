@@ -6,13 +6,13 @@ import { Repository } from 'typeorm';
 import EventEntity from './event.entity';
 import { IEvent, CreateEventDto } from './event.type';
 
-const entityToEvent = (entity: EventEntity): IEvent => ({
+export const entityToEvent = (entity: EventEntity): IEvent => ({
   ...entity,
   include: map(parseInt, split(',', entity.include)),
   exclude: map(parseInt, split(',', entity.exclude)),
 });
 
-const eventToEntity = (event: IEvent): EventEntity => ({
+export const eventToEntity = (event: IEvent): EventEntity => ({
   ...event,
   include: join(',', event.include),
   exclude: join(',', event.exclude),
@@ -30,6 +30,15 @@ export default class EventService {
     const transformedEvents: IEvent[] = map(entityToEvent, events);
 
     return transformedEvents;
+  }
+
+  public async findById(id: number): Promise<IEvent> {
+    const event: EventEntity = await this.eventRepo.findOne({ id });
+    if (!event) return null;
+
+    const transformedEvent: IEvent = entityToEvent(event);
+
+    return transformedEvent;
   }
 
   public async create(event: CreateEventDto): Promise<IEvent> {

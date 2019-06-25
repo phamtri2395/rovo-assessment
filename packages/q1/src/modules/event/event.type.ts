@@ -98,3 +98,11 @@ export class CreateEventDto {
   @IsNotEmpty()
   public readonly recurrence: RecurrenceType;
 }
+
+export const FreqMap = {
+  none: null,
+  daily: 'DAILY',
+  weekly: 'WEEKLY',
+  monthly: 'MONTHLY',
+  yearly: 'YEARLY',
+};
