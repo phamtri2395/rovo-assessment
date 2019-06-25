@@ -10,17 +10,11 @@ export default class EventService {
     private readonly eventRepo: Repository<Event>
   ) {}
 
-  public async findAll(): Promise<Event[]> {
-    const result = await this.eventRepo.find();
-    console.log('get result', result);
-
-    return result;
+  public findAll(): Promise<Event[]> {
+    return this.eventRepo.find();
   }
 
-  public async create(): Promise<boolean> {
-    const result = await this.eventRepo.save({ name: 'Test' });
-    console.log('create result', result);
-
-    return true;
+  public async create(): Promise<Event> {
+    return this.eventRepo.save({ name: 'Test' });
   }
 }
