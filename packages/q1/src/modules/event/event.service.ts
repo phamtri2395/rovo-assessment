@@ -4,6 +4,7 @@ import { Repository } from 'typeorm';
 
 import IEvent from './event.interface';
 import EventEntity from './event.entity';
+import { CreateEventDto } from './event.dto';
 
 @Injectable()
 export default class EventService {
@@ -16,7 +17,7 @@ export default class EventService {
     return this.eventRepo.find();
   }
 
-  public async create(): Promise<IEvent> {
-    return this.eventRepo.save({ name: 'Test' });
+  public async create(event: CreateEventDto): Promise<IEvent> {
+    return this.eventRepo.save(event);
   }
 }
