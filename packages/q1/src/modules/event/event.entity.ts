@@ -1,7 +1,8 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import IEvent from './event.interface';
 
 @Entity()
-export default class Event {
+export default class EventEntity implements IEvent {
   @PrimaryGeneratedColumn()
   public id: number;
 
