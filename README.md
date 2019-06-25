@@ -4,7 +4,7 @@ This repo contains all assessments 📝📝📝
 
 ## 🚧 Progress (working)
 
-- [ ] #1 - Working
+- [x] #1 - Basically done, need more enhancements, unit tests & docs
 - [ ] #2
 - [ ] #3
 
