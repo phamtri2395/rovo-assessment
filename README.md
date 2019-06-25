@@ -5,8 +5,8 @@ This repo contains all assessments 📝📝📝
 ## 🚧 Progress (working)
 
 - [x] #1 - Basically done, need more enhancements, unit tests & docs
-- [ ] #2
-- [ ] #3
+- [x] #2 - Basically done, need more tests, docs & performance check
+- [ ] #3 - Working
 
 ## ❗️ Prerequisites
 
