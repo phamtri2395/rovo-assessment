@@ -1218,6 +1218,14 @@
     express "4.17.1"
     multer "1.4.1"
 
+"@nestjs/swagger@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/@nestjs/swagger/-/swagger-3.0.2.tgz#b15b3354050757f648e7ebc6ae8d15a929220804"
+  integrity sha512-7cmOqa3MoK3ZXThECa3RCe5s5Bppm66DqDRz+nfTp5k2oGoFHX9t45jNU8P5aANCIEi1nA3TYwvEAGgZdV8WbA==
+  dependencies:
+    lodash "4.17.11"
+    path-to-regexp "3.0.0"
+
 "@nestjs/testing@^6.3.2":
   version "6.3.2"
   resolved "https://registry.npmjs.org/@nestjs/testing/-/testing-6.3.2.tgz#27ee2cb8455a166da9f1bca3d3ab8bb63842bec7"
@@ -6547,6 +6555,11 @@ path-to-regexp@0.1.7:
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
+path-to-regexp@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-3.0.0.tgz#c981a218f3df543fa28696be2f88e0c58d2e012a"
+  integrity sha512-ZOtfhPttCrqp2M1PBBH4X13XlvnfhIwD7yCLx+GoGoXRPQyxGOTdQMpIzPSPKXAJT/JQrdfFrgdJOyAzvgpQ9A==
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -7856,6 +7869,18 @@ supports-color@^6.1.0:
   integrity sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==
   dependencies:
     has-flag "^3.0.0"
+
+swagger-ui-dist@^3.18.1:
+  version "3.22.3"
+  resolved "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.22.3.tgz#f2042966f8e0eef0c5730cf90891a89dab7810e1"
+  integrity sha512-tmjAsqT43pqg5UoiQ2805c+juX0ASSoI/Ash/0c19jjAOFtTfE93ZrzmFd9hjqVgre935CYeXT0uaku42Lu8xg==
+
+swagger-ui-express@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.npmjs.org/swagger-ui-express/-/swagger-ui-express-4.0.6.tgz#c7a1cc3952a01017483b382d67e27196c82577c3"
+  integrity sha512-7YkBfVWRYjvnGITs7vygM8VNF91iUwX8ReHQaTD9I7q8Ky8SYXZ81gyFc+kovE34iSbCC1yW+n2oII3b3uSxXQ==
+  dependencies:
+    swagger-ui-dist "^3.18.1"
 
 symbol-observable@^1.1.0:
   version "1.2.0"
