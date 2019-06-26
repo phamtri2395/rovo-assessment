@@ -19,6 +19,8 @@
     "start:prod": "node build/main.js"
   },
   "dependencies": {
+    "inquirer": "^6.4.1",
+    "line-reader": "^0.4.0",
     "ramda": "^0.26.1"
   },
   "devDependencies": {}

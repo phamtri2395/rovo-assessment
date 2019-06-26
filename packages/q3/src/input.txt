@@ -1,0 +1,5 @@
+Customer A, USD, 10
+Customer C, EUR, 20
+Customer B, USD, 15
+Customer A, USD, 10
+Customer B, VND, 300000
