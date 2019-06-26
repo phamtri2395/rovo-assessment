@@ -6,7 +6,7 @@ This repo contains all assessments 📝📝📝
 
 - [x] #1 - Basically done, need more enhancements, unit tests & docs
 - [x] #2 - Basically done, need more tests, docs & performance check
-- [ ] #3 - Working
+- [x] #3 - Basically done, need more tests
 
 ## ❗️ Prerequisites
 
@@ -47,7 +47,7 @@ cd packages/q1 && yarn dev
 > Start an assessment in development mode
 
 ```sh
-cd packages/q1 && yarn build && yarn start
+cd packages/q1 && yarn start:dev
 ```
 
 > Or build and run in production mode
