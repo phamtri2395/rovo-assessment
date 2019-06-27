@@ -8,6 +8,12 @@ This repo contains all assessments 📝📝📝
 - [x] #2 - Basically done, need more tests, docs & performance check
 - [x] #3 - Done, unit tests, coverage (100%)
 
+## 📑 Table of contents
+
+- Question #1
+- Question #2
+- [Question #3](packages/q3/README.md)
+
 ## ❗️ Prerequisites
 
 * [Node.js](https://nodejs.org/en/): JavaScript runtime
