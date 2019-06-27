@@ -54,7 +54,7 @@ export default class TransferService {
 
     const currencies = map(
       // @ts-ignore
-      k => `${k} ${balances[k]}`,
+      k => `${k} ${balances[k].toFixed(2)}`,
       keys(balances)
     );
 
