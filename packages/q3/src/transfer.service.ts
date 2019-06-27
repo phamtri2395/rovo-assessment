@@ -20,7 +20,7 @@ export default class TransferService {
       this.storage[customer] = [];
     }
 
-    this.storage[customer].push({ currency, value });
+    this.storage[customer].push({ currency, value: parseInt(value) });
   }
 
   public getCustomers(): string[] {
