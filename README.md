@@ -47,16 +47,10 @@ yarn bootstrap
 > Lerna bootstrap
 
 ```sh
-cd packages/q1 && yarn dev
-```
-
-> Start an assessment in development mode
-
-```sh
 cd packages/q1 && yarn start:dev
 ```
 
-> Or build and run in production mode
+> Start an assessment in development mode
 
 ## 🐞 How to test
 
