@@ -14,13 +14,21 @@ export default class TransferService {
   private storage: {} = {};
 
   public readTransaction(record: string): void {
-    const [customer, currency, value] = split(', ', record);
+    const [customer, currency, raw_value] = split(', ', record);
 
+    // missing fields
+    if (!customer || !currency || !raw_value) return;
+
+    const value = parseInt(raw_value, 10);
+    // invalid value
+    if (!value || isNaN(value)) return;
+
+    // init customer in storage
     if (!this.storage[customer]) {
       this.storage[customer] = [];
     }
 
-    this.storage[customer].push({ currency, value: parseInt(value) });
+    this.storage[customer].push({ currency, value });
   }
 
   public getCustomers(): string[] {
