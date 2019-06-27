@@ -19,7 +19,7 @@ export default class TransferService {
     // missing fields
     if (!customer || !currency || !raw_value) return;
 
-    const value = parseInt(raw_value, 10);
+    const value = parseFloat(raw_value);
     // invalid value
     if (!value || isNaN(value)) return;
 
