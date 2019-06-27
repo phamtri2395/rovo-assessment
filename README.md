@@ -6,7 +6,7 @@ This repo contains all assessments 📝📝📝
 
 - [x] #1 - Basically done, need more enhancements, unit tests & docs
 - [x] #2 - Basically done, need more tests, docs & performance check
-- [x] #3 - Basically done, need more tests
+- [x] #3 - Done, unit tests, coverage (100%)
 
 ## ❗️ Prerequisites
 
